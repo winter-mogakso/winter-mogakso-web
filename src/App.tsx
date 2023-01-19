@@ -1,11 +1,15 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import Home from './components/pages/Home';
+import NotFound from './components/pages/404';
 
 function App() {
     return (
-        <div>
-            <div>React and TS without CRA</div>
-            <div>Prettier and eslint</div>
-        </div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+        </Routes>
     );
 }
 
