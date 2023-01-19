@@ -5,6 +5,9 @@ const path = require('path');
 module.exports = {
     entry: './src/index.tsx',
     resolve: {
+        alias: {
+            src: path.resolve(__dirname, 'src'),
+        },
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
     module: {
@@ -20,6 +23,10 @@ module.exports = {
                         loader: 'file-loader',
                     },
                 ],
+            },
+            {
+                test: /\.(css|sass|scss)$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
         ],
     },
