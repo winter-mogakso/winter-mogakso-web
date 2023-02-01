@@ -1,0 +1,52 @@
+@import '/src/utils/utils';
+
+.content {
+    @include desktop-title;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 40px 10%;
+
+    @include labtop {
+        padding: 40px;
+    }
+
+    @include tablet {
+        padding: 40px;
+    }
+
+    @include mobile {
+        @include mobile-title;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    &_left {
+        padding: 20px;
+        border-right: 1px solid lightgray;
+
+        @include mobile {
+            border-right: none;
+            border-bottom: 1px solid lightgray;
+        }
+    }
+
+    .button {
+        @include desktop-body-bold;
+
+        background-color: lightblue;
+        color: black;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+
+        @include mobile {
+            @include mobile-body-bold;
+
+            padding: 8px 13px;
+        }
+    }
+}

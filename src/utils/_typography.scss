@@ -1,0 +1,84 @@
+@mixin desktop-title {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 67px;
+}
+
+@mixin desktop-heading {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 43px;
+}
+
+@mixin desktop-subheading {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+@mixin desktop-body-bold {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+@mixin desktop-body {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+@mixin desktop-body-small {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+@mixin desktop-small-bold {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+@mixin desktop-small {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+@mixin mobile-title {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 45px;
+}
+
+@mixin mobile-heading {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+@mixin mobile-subheading {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+@mixin mobile-body-bold {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+@mixin mobile-body {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+@mixin mobile-small-bold {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+@mixin mobile-small {
+    font-size: 10px;
+    line-height: 18px;
+}
