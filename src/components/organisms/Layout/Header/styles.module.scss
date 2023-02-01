@@ -1,8 +1,13 @@
+@import '/src/utils/utils';
+
 .header {
     display: flex;
     justify-content: space-between;
-
     padding: 40px 10%;
+
+    @include mobile {
+        padding: 20px;
+    }
 }
 
 .account_btn {
