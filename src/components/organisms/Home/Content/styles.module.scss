@@ -46,19 +46,4 @@
             height: 50%;
         }
     }
-
-    .button {
-        @include desktop-body-bold;
-
-        background-color: #90caf9;
-        color: white;
-        padding: 10px 30px;
-        border: none;
-        border-radius: 5px;
-
-        @include mobile {
-            @include mobile-body-bold;
-            padding: 8px 13px;
-        }
-    }
 }

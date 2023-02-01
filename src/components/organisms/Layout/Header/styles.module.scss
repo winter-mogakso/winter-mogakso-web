@@ -3,14 +3,17 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 40px 10%;
+    align-items: center;
+    padding: 20px 10%;
 
     @include mobile {
         padding: 20px;
     }
 }
 
-.account_btn {
-    display: flex;
-    gap: 20px;
+.account {
+    &_group {
+        display: flex;
+        gap: 10px;
+    }
 }
